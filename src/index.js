@@ -14,7 +14,7 @@ element of the HTML document (this is actually using the DOM API to find this el
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './component/App';
-// import './index.css';
+import './index.css';
 
 // Insert React components into 'root' element in (index.html in public folder???)
 ReactDOM.render(<App />, document.getElementById('root'));    
