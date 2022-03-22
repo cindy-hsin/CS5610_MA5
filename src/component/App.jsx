@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Cell from './Cell';
-import CellWithRedux from './CellWithRedux';
 import './App.css';
 
 
@@ -10,30 +9,11 @@ function App() {
     <div>
       <div>Count: {count}</div>
       <div className="grid">
-        {/* <Cell count={count} updateCount={(increment)=>{setCount(count + increment)}}/>
-        <Cell count={count} updateCount={(increment)=>{setCount(count + increment)}}/>
-        <Cell count={count} updateCount={(increment)=>{setCount(count + increment)}}/>
-        <Cell count={count} updateCount={(increment)=>{setCount(count + increment)}}/> */}
-        <Cell count={count} updateCount={(newCount)=>{setCount(newCount)}}/>
-        <Cell count={count} updateCount={(newCount)=>{setCount(newCount)}}/>
-        <Cell count={count} updateCount={(newCount)=>{setCount(newCount)}}/>
-        <Cell count={count} updateCount={(newCount)=>{setCount(newCount)}}/>
-
-        
-
-
+        <Cell id={1} count={count} updateCount={(increment)=>{setCount(count + increment)}}/>
+        <Cell id={2} count={count} updateCount={(increment)=>{setCount(count + increment)}}/>
+        <Cell id={3} count={count} updateCount={(increment)=>{setCount(count + increment)}}/>
+        <Cell id={4} count={count} updateCount={(increment)=>{setCount(count + increment)}}/>
       </div>
-
-
-      <div>Count: </div>
-      <div className="grid">
-        <CellWithRedux/>
-        <CellWithRedux/>
-        <CellWithRedux/>
-        <CellWithRedux/>
-      </div>
-
-
     </div>
   );
 

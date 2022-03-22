@@ -11,13 +11,13 @@ export default function Cell(props) {
     className += " white";
   }
 
-  useEffect(()=> console.log(className));
+  // useEffect(()=> console.log(props.id + ' ' + className));
 
   useEffect(()=>{
     if (isOn) {
-      props.updateCount(props.count+1);
+      props.updateCount(1);
     } else if (props.count > 0) {
-      props.updateCount(props.count-1);
+      props.updateCount(-1);
     }
   }, [isOn]);
 
